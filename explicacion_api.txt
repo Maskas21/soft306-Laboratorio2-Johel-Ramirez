@@ -1,0 +1,11 @@
+Una API es una aplicación que permite que dos programas se comuniquen entre sí, 
+se crea con Spring Boot (Maven, Java, dependencia Spring web) y una clase como MatriculaController con un endpoint  POST /matricula 
+recibiendo un JSON con edad, créditos, promedio y tieneMora, aplicando las reglas R1 a R4 devolviendo decisión y motivo. 
+Ejemplos:
+    Entrada: {"edad":25,"creditos":12,"promedio":85,"tieneMora":false} 
+
+    Salida: {"decision":"PERMITIDA","motivo":"Cumple todas las condiciones."} 
+
+ 
+
+Se prueba con Postman, enviando un post con el JSON comprobando que la decisión sea la esperada, no solo el código 200 (todo bien, la solicitud se procesó).
